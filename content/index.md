@@ -1,25 +1,26 @@
 ---
 title: "Min fina titel"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
 ---
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+[FIGURE src="image/me1.jpg?h=350" class="right" caption="Bild på mig"]
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Mitt namn är Martin Lindström, jag är född och uppvuxen i södra Skåne. Jag är född i Brantevik, där jag bodde tills jag var 6 år gammal och flyttade sedan till Borrby där jag har bott fram tills nu när jag började studera, nu bor jag i en liten etta på Trossö i Karlskrona.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Några av mina intressen när jag var yngre var tv spel och skateboard, något som fortfarande sitter i (längesedan jag åkte skateboard dock). När det var dags för gymnasiet så bestämde jag mig för att läsa byggprogrammet som snickare på Parkskolan i Ystad eftersom jag trodde att det skulle vara något för mig. Det var det inte.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Jag har jobbat kort som byggare och har även jobbat några år i en fabrik där vi producera vegansk mat. Där jobbade jag först med att packa och palla produkten och blev sedan 'blandare' och blandade då smeten som produkterna gjordes av. När jag blev trött på det jobbet så kom jag fram till att jag vill jobba med något som intresserar mig och eftersom jag hade gjort några tutorials och tittat lite på html/css och javascript sedan tidigare och tyckte det verkade roligt, speciellt problemlösningen, så fick det bli webbprogrammering.
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+När det kommer till hobbies så får jag väl säga att spelandet tar upp mest av min fritid, både på pc och på ps4. Jag ska försöka att bli mer aktiv med skateboard åkningen och kanske börja styrketräna? Vi får se.

@@ -1,0 +1,232 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+@myRedColor: #ff5050;
+
+/**
+ * General layout
+ */
+ /* Hide submenu, leave this to kmom02 */
+ .rm-desktop ul {
+     // display: none;
+     background-color: #353535;
+ }
+
+ /* Hide responsive/mobile menu, leave this to kmom02 */
+ .rm-navbar-max:hover {
+     // display: none;
+     color: #fff;
+ }
+
+ .rm-navbar-max {
+     // display: none;
+     color: @myRedColor;
+ }
+
+ .rm-mobile a {
+     color: @myRedColor;
+ }
+
+.inner-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #eee;
+}
+
+.inner-wrap-header {
+    background-color: #262626;
+    max-width: 100%;
+}
+
+.outer-wrap-header {
+    border-bottom: 1px solid @myRedColor;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.region-header-col-1 {
+    a {
+        text-decoration: none;
+        font-size: 30px;
+        color: @myRedColor;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.region-header-col-2 {
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+        /* float: left; */
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 25px;
+        color: @myRedColor;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.region-main {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+
+    &.has-sidebar {
+        margin-left: 0;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+    }
+}
+
+.region-main,
+.region-sidebar-right,
+.region-sidebar-left {
+    // overflow: auto;
+}
+
+.region-sidebar-right,
+.region-sidebar-left {
+    width: 20%;
+    float: left;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+    float: left;
+}
+
+.selected a{
+    color: #eee;
+}
+
+a {
+    text-decoration: underline;
+    color: @myRedColor;
+}
+
+a:hover {
+    color: #eee;
+}
+
+.rm-navbar {
+    text-align: center;
+}
+
+.site-logo {
+    display: none;
+}
+
+ol {
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
+}
+
+.wrap-sidebar .block h4 {
+    border-top: 1px solid #555;
+    background-image: linear-gradient(to right, #ff5050, #660000, #222);
+}
+
+.article {
+    text-align: center;
+
+    a {
+        color: #eee;
+    }
+}
+
+.next {
+    float: right;
+}
+
+.previous {
+    float: left;
+}
+
+.div {
+    display:block;
+}
+
+.byline-footer {
+    width: 70%;
+    margin-top: 15em;
+    margin-bottom: 10px;
+    padding: 1em;
+    padding-bottom: 5em;
+    border: solid 1px #000;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.mee {
+    height: 95px;
+    width: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.outer-wrap-footer {
+    clear:both;
+    margin-top: 15px;
+    padding-top: 30px;
+}
+
+.inner-wrap-footer {
+    border-top:2px solid @myRedColor;
+    text-align: center;
+    max-width: 100%;
+}
+
+.footer-column {
+    width: 33%;
+    margin-bottom: 2%;
+    float: left;
+    height: 200px;
+}
+
+.footer-column-x {
+    padding-right: 1em;
+    padding-bottom: 30px;
+}
+
+.footer-column-1, .footer-column-2 {
+    border-right: 1px solid @myRedColor;
+}
+
+.site-footer {
+    min-height: 250px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+    .byline-footer {
+        width: 100%;
+    }
+}

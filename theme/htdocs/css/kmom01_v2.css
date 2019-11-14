@@ -1,0 +1,222 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #424242;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font: 100.01%/1 serif;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+.wrap-all {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #002266;
+}
+* {
+  box-sizing: border-box;
+}
+.region-header-col-1 {
+  margin-bottom: 20px;
+}
+.region-header-col-1 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ff5050;
+}
+.region-header-col-1 a:hover {
+  color: #002266;
+  text-decoration: underline;
+}
+.region-header-col-2 ul {
+  /* border: 2px solid #000; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.region-header-col-2 li {
+  display: inline;
+  /* float: left; */
+  margin-right: 10px;
+}
+.region-header-col-2 a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ff5050;
+}
+.region-header-col-2 a:hover {
+  text-decoration: underline;
+  color: #002266;
+}
+.wrap-sidebar {
+  float: left;
+  margin-right: 20px;
+}
+.breadcrumb-list {
+  display: none;
+}
+.block.toc {
+  text-align: center;
+}
+.selected a {
+  color: #002266;
+}
+a {
+  text-decoration: underline;
+  color: #ff5050;
+}
+a:hover {
+  color: #002266;
+}
+.rm-navbar {
+  text-align: center;
+}
+.site-logo {
+  display: none;
+}
+.article {
+  max-width: 700px;
+  text-align: center;
+  background-color: #ff5050;
+  margin: 0 auto;
+}
+.article a {
+  color: #002266;
+}
+.region-main.has-sidebar-left {
+  display: inline;
+  float: left;
+  width: 65%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+  text-align: center;
+}
+.next {
+  float: right;
+}
+.previous {
+  float: left;
+}
+.div {
+  display: block;
+}
+.byline-footer {
+  width: 600px;
+  margin-top: 15em;
+  margin-bottom: 10px;
+  padding: 1em;
+  padding-bottom: 3em;
+  border: solid 1px #000;
+  font-size: 15px;
+  font-style: italic;
+}
+.mee {
+  height: 75px;
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.outer-wrap-footer {
+  border: 2px solid #000;
+  clear: both;
+}
+.inner-wrap-footer {
+  border: 2px solid #eee;
+  text-align: center;
+}
+.footer-column {
+  width: 33%;
+  float: left;
+  border-right: 1px solid #000;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */

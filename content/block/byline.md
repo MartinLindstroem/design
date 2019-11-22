@@ -1,4 +1,4 @@
-<div class="byline-footer">
+<div class="author-byline">
 <figure class="figure left">
     <img src="image/me1.jpg?h=100" class="mee" alt="Bild på Martin">
 </figure>    

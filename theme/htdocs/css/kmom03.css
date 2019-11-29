@@ -5131,7 +5131,6 @@ hr::after {
   margin-right: auto;
   margin-left: auto;
   max-width: 1100px;
-  color: #eee;
 }
 .inner-wrap-header .row {
   max-width: 100%;
@@ -5220,7 +5219,7 @@ code {
   margin-right: 0.52083333%;
 }
 .inner-wrap-footer {
-  border-top: 2px solid #ff5050;
+  border-top: 2px solid #000;
 }
 .footer-column {
   display: inline;

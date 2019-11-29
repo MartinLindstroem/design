@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for colorful design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
   * Normalize and reset the style.
@@ -4744,23 +4744,29 @@ template {
  */
 html {
   overflow-y: scroll;
-  background-color: #262626;
+  background-color: #333;
 }
 body {
   margin: 0;
   padding: 0;
   color: #eee;
-  background-color: #262626;
-  font: 16px/1.5 "sans-serif";
+  background-color: #597F9E;
+  font: 16px/1.5 'Sulphur Point', sans-serif;
+}
+.article {
+  background-color: #EF726E;
 }
 img {
   max-width: 100%;
 }
 a {
-  color: #ff5050;
+  color: #ECE06E;
 }
 a:hover {
   color: #fff;
+}
+.outer-wrap-header {
+  background-color: #EF726E;
 }
 h1,
 h2,
@@ -4768,7 +4774,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "serif";
+  font-family: 'Sulphur Point', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5158,7 +5164,7 @@ hr::after {
   margin-right: 0.52083333%;
 }
 code {
-  background-color: #262626;
+  background-color: #597F9E;
 }
 .region-main {
   display: inline;
@@ -5412,7 +5418,7 @@ a.rm-button .rm-button-face-2 {
   transition: color 0.1s ease;
 }
 a.rm-button.rm-clicked {
-  color: #ff5050;
+  color: #9FB129;
   background-color: transparent;
 }
 a.rm-button.rm-clicked .rm-button-face-1 {
@@ -5457,7 +5463,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #353535;
+  background-color: #EF726E;
 }
 .rm-desktop li {
   position: relative;
@@ -5467,11 +5473,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-decoration: underline;
 }
 .rm-desktop li a {
-  color: #ff5050;
+  color: inherit;
   background-color: inherit;
 }
 .rm-desktop li a:hover {
-  color: #fff;
+  color: inherit;
   background-color: inherit;
 }
 .rm-desktop li:hover > ul {
@@ -5528,7 +5534,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #ff5050;
+  color: #EF726E;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -5545,7 +5551,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #131313;
+  background-color: #597F9E;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5624,3 +5630,16 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
+@font-face {
+  font-family: 'Sulphur Point';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Sulphur Point Regular'), local('SulphurPoint-Regular'), url(https://fonts.gstatic.com/s/sulphurpoint/v1/RLp5K5vv8KaycDcazWFPBj2adf4Yvw.ttf) format('truetype');
+}
+.region-header-col-1 a {
+  color: #fff;
+}
+.region-flash {
+  display: none;
+}

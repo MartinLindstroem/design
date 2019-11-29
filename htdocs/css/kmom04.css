@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom03 where we use LESS.
  */
@@ -4744,23 +4744,29 @@ template {
  */
 html {
   overflow-y: scroll;
-  background-color: #262626;
+  background-color: #333;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #eee;
-  background-color: #262626;
+  color: #333;
+  background-color: #eee;
   font: 16px/1.5 "sans-serif";
+}
+.article {
+  background-color: #eee;
 }
 img {
   max-width: 100%;
 }
 a {
-  color: #ff5050;
+  color: #555;
 }
 a:hover {
-  color: #fff;
+  color: #444;
+}
+.outer-wrap-header {
+  background-color: #eee;
 }
 h1,
 h2,
@@ -4768,7 +4774,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "serif";
+  font-family: "sans-serif";
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5158,7 +5164,7 @@ hr::after {
   margin-right: 0.52083333%;
 }
 code {
-  background-color: #262626;
+  background-color: #eee;
 }
 .region-main {
   display: inline;
@@ -5412,7 +5418,7 @@ a.rm-button .rm-button-face-2 {
   transition: color 0.1s ease;
 }
 a.rm-button.rm-clicked {
-  color: #ff5050;
+  color: #9FB129;
   background-color: transparent;
 }
 a.rm-button.rm-clicked .rm-button-face-1 {
@@ -5457,7 +5463,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #353535;
+  background-color: inherit;
 }
 .rm-desktop li {
   position: relative;
@@ -5467,11 +5473,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-decoration: underline;
 }
 .rm-desktop li a {
-  color: #ff5050;
+  color: inherit;
   background-color: inherit;
 }
 .rm-desktop li a:hover {
-  color: #fff;
+  color: inherit;
   background-color: inherit;
 }
 .rm-desktop li:hover > ul {
@@ -5528,7 +5534,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #ff5050;
+  color: #9FB129;
   position: fixed;
   top: 16px;
   right: 24px;

@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom04.
+ * Stylesheet for kmom06-designprinciples.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom05 where we use LESS.
  */
 /**
   * Normalize and reset the style.
@@ -4725,6 +4725,18 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+/**
  * Internal self contained modules, save in directory module/.
  */
 /**
@@ -4744,29 +4756,47 @@ template {
  */
 html {
   overflow-y: scroll;
-  background-color: #333;
+  background-color: #eee;
 }
 body {
+  background-image: url("../img/blur_hardwood.jpg");
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #3b4b78;
   background-color: #eee;
-  font: 16px/1.5 "sans-serif";
+  font: 16px/1.5 'Acme', sans-serif;
 }
 .article {
+  background-color: #e6e6e6;
+  padding: 20px;
+  margin-bottom: 35px;
+}
+.author-byline {
   background-color: #eee;
+  box-shadow: 10px 10px 10px #666;
+  opacity: 0.9;
 }
 img {
   max-width: 100%;
 }
-a {
-  color: #555;
+body a {
+  color: #435689;
 }
-a:hover {
-  color: #444;
+body a:hover {
+  text-decoration-color: red;
 }
-.outer-wrap-header {
+.block {
   background-color: #eee;
+  opacity: 0.9;
+}
+.wrap-sidebar .block h4 {
+  text-align: center;
+  opacity: 1;
+  padding-top: 5px;
+}
+.outer-wrap-footer {
+  background-color: #eee;
+  opacity: 0.9;
 }
 h1,
 h2,
@@ -5464,7 +5494,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: inherit;
+  background-color: #222;
 }
 .rm-desktop li {
   position: relative;
@@ -5478,7 +5508,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   background-color: inherit;
 }
 .rm-desktop li a:hover {
-  color: inherit;
+  color: #eee;
   background-color: inherit;
 }
 .rm-desktop li:hover > ul {
@@ -5538,7 +5568,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #9FB129;
+  color: #3b4b78;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -5555,7 +5585,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #131313;
+  background-color: #eee;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -5634,3 +5664,182 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_XxrBaw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Acme', sans-serif;
+}
+.region-flash {
+  display: none;
+}
+.outer-wrap-header {
+  font-size: 15px;
+  height: 100px;
+  background-color: #eee;
+  opacity: 0.9;
+}
+.inner-wrap-footer {
+  border-top: none;
+}
+.rm-mobile a {
+  color: #3b4b78;
+}
+.rm-desktop li a {
+  color: #435689;
+  text-decoration: underline;
+  font-size: 23px;
+  margin-top: 20px;
+}
+.rm-desktop li a:hover {
+  text-decoration-color: red;
+  color: #435689;
+}
+.rm-navbar-max {
+  color: #435689;
+}
+.rm-default a {
+  padding: 3px;
+}
+code {
+  background-color: #435689;
+}
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #eee;
+@bgColorBody: #eee;
+@colorBody: #3b4b78;
+@linkColor: #333;
+@linkColorHover: #555;
+@bgColorArticle: @bgColorBody;
+@bgHeaderColor: @bgColorBody;
+//@fontFamilyBody: serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    background-image: url("../img/blur_hardwood.jpg");
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    //font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+.article {
+    background-color: #e6e6e6;
+    padding: 20px;
+    margin-bottom: 35px;
+    // opacity: 0.8;
+}
+
+.author-byline {
+    background-color: @bgColorArticle;
+    box-shadow: 10px 10px 10px #666;
+    opacity: 0.9;
+}
+
+img {
+    max-width: 100%;
+}
+
+body a {
+     color: #435689;
+
+    &:hover {
+        text-decoration-color: red;
+    }
+}
+
+.block {
+    background-color: @bgColorArticle;
+    opacity: 0.9;
+}
+
+.wrap-sidebar .block h4 {
+    text-align: center;
+    opacity: 1;
+    padding-top: 5px;
+}
+
+.outer-wrap-footer {
+    background-color: @bgColorArticle;
+    opacity: 0.9;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

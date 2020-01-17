@@ -1,0 +1,67 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #eee;
+@bgColorBody: #eee;
+@colorBody: #333;
+@linkColor: #333;
+@linkColorHover: #555;
+@bgColorArticle: @bgColorBody;
+@bgHeaderColor: @bgColorBody;
+//@fontFamilyBody: serif;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    background-image: repeating-linear-gradient(190deg, #fff, #f6f6f6 10%, #f3f3f3 15%);
+    margin: 0;
+    padding: 0;
+    // color: @colorBody;
+    background-color: @bgColorBody;
+    //font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+.article {
+    background-color: @bgColorArticle;
+    background-image: repeating-linear-gradient(350deg, #fff, #f6f6f6 10%, #f3f3f3 15%);
+    padding: 20px;
+    border-radius: 0 30px 0 30px;
+    border: 4px dashed #222;
+    box-shadow: 5px 10px 20px;
+    margin-bottom: 35px;
+}
+
+.author-byline {
+    box-shadow: 10px 10px 10px #666;
+}
+
+img {
+    max-width: 100%;
+}
+
+body a {
+     color: @linkColor;
+
+    &:hover {
+        color: @linkColorHover;
+        text-decoration-color: red;
+    }
+}
+
+.outer-wrap-header {
+    background-color: #222;
+    background-image: repeating-radial-gradient(#000, transparent 100px);
+}
+
+.wrap-sidebar .block h4 {
+    border-top: 1px solid #000;
+    background-image: linear-gradient(to right, #fff, #ddd, #888, #444, #333);
+    padding-top: 5px;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

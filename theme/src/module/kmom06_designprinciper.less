@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+@bgColorHtml: #eee;
+@bgColorBody: #eee;
+@colorBody: #3b4b78;
+@linkColor: #222;
+@linkColorHover: #000;
+@maxBgColor: #eee;
+@maxButtonClickedColor: #3b4b78;
+@navbarItemHoverColor: #eee;
+@bgHeaderColor: #222;
+
+
+@fontFamilyBody: 'Acme', sans-serif;
+// @fontFamilyHeader: 'Montserrat', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @fontFamilyBody;
+}
+
+.region-flash {
+    display: none;
+}
+
+.outer-wrap-header {
+    font-size: 15px;
+    height: 100px;
+    background-color: @bgColorBody;
+    opacity: 0.9;
+}
+
+.inner-wrap-footer {
+    border-top: none;
+}
+
+.rm-mobile a {
+    color: #3b4b78;
+}
+
+.rm-desktop li a {
+    color: #435689;
+    text-decoration: underline;
+    font-size: 23px;
+    margin-top: 20px;
+
+    &:hover {
+        text-decoration-color: red;
+        color: #435689;
+    }
+}
+
+.rm-navbar-max {
+    color: #435689;
+}
+
+.rm-default a {
+    padding: 3px;
+}
+
+code {
+    background-color: #435689;
+}

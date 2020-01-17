@@ -5104,6 +5104,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   background-color: #444;
   color: #fff;
 }
+.rm-mobile a {
+  color: inherit;
+}
 .rm-mobile li {
   display: block;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
